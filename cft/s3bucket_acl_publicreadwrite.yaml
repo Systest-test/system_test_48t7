@@ -41,7 +41,7 @@ Resources:
       VersioningConfiguration:
         Status: Enabled
       PublicAccessBlockConfiguration:
-        RestrictPublicBuckets: True
+        RestrictPublicBuckets: true
   SourceBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
