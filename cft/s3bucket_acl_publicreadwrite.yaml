@@ -40,6 +40,8 @@ Resources:
           Value: !Ref Environment
       VersioningConfiguration:
         Status: Enabled
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: True
   SourceBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
