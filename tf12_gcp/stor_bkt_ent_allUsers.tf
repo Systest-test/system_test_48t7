@@ -22,6 +22,7 @@ resource "google_storage_bucket" "static-site" {
   tags = {
     Name = "google_storage_bucket"
   }
+  public_access_prevention = "enforced"
 }
 
 resource "google_storage_bucket_access_control" "public_rule" {
